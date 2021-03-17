@@ -1,20 +1,14 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    overflow-x: hidden;
-}
-
-header {
-    padding: 10px;
-    background-color: blue;
+    font-family: 'Lato', sans-serif;
 }
 
 header .header-container {
-    border: 1px black solid;
     position: relative;
 
     width: 100%;
@@ -28,16 +22,26 @@ header .header-container img {
 }
 
 header .header-container .header-title {
-    display: flex;
-    height: auto;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-}
-
-header .header-title h1 {
     background-color: #000;
     color: #fff;
+    padding: 5px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main .main-container > div:nth-child(even) {
+    background-color: rgb(231, 231, 231);
+}
+
+main .main-container > div {
+    max-width: 100%;
+    min-widtH: 25%;
+    height: 225px;
+
+    padding: 10px;
 }
 
 footer {
