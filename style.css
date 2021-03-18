@@ -73,6 +73,11 @@ footer a:hover {
     text-decoration: underline;
 }
 
+.form-container {
+    background-color: black;
+    color: white;
+}
+
 footer p {
     color:rgb(179, 179, 179);
     display: inline-block;
