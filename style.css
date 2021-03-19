@@ -9,6 +9,8 @@ body {
     font-size: 18px;
 }
 
+/* Header */
+
 header .header-container {
     position: relative;
 
@@ -24,6 +26,17 @@ header .header-container img {
     height: 100%;
 }
 
+.mission-values {
+    background-color: black;
+    color: white;
+    position: absolute;
+    width: 250px;
+    height: 415px;
+
+    top: 20%;
+    right: 5%;
+}
+
 header .header-container .header-title {
     background-color: #000;
     color: #fff;
@@ -33,21 +46,15 @@ header .header-container .header-title {
     text-align: center;
 
     position: absolute;
-    top: 50%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+/* Main */
+
 main .main-container > div:nth-child(even) {
     background-color: rgb(231, 231, 231);
-}
-
-main .main-container > div {
-    max-width: 100%;
-    min-widtH: 25%;
-    height: 325px;
-
-    padding: 10px;
 }
 
 main .main-container .mountain p {
@@ -55,6 +62,96 @@ main .main-container .mountain p {
     float: left;
     max-width: 70%;
 }
+
+/* Forms */
+.contact {
+    padding: 25px;
+    height: auto;
+}
+
+.contact h1 {
+    text-align: center;
+}
+
+.developer {
+    display: flex;
+    justify-content: center;
+
+    margin: 0 auto;
+    width: 75%;
+}
+
+.developer h3 {
+    margin: 10px 0;
+    text-align: center;
+}
+.developer a {
+    text-decoration: none;
+}
+.developer a:hover {
+    text-decoration: underline;
+}
+
+form {
+    margin: 0 auto;
+
+    height: auto;
+    width: 75%;
+}
+
+form .first-and-last-name {
+    display: flex;
+    justify-content: space-around;
+}
+
+form .email {
+    margin: 10px 0;
+}
+
+form .email, .textarea, .button {
+    display: flex;
+    justify-content: center;
+}
+
+form .button {
+    margin-top: 10px;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.vision-mission-values {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    height: 600px;
+    border: 1px solid  black;
+}
+
+.vision-mission-wrapper {
+    width: 75%;
+    height: 500px;
+    margin: auto auto;
+}
+
+.vision {
+    text-align: center;
+}
+
+.mission {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.vision-mission-wrapper img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Foot */
 
 footer {
     background-color: #000;
@@ -71,11 +168,6 @@ footer a {
 }
 footer a:hover {
     text-decoration: underline;
-}
-
-.form-container {
-    background-color: black;
-    color: white;
 }
 
 footer p {
