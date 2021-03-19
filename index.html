@@ -17,7 +17,7 @@
 <body>
     <header>
         <div class="header-container">
-            <img src="./img/Truck.jpg" alt="Semi-Truck">
+            <img src="./img/Truck2.jpg" alt="Semi-Truck">
             <div class="header-title">
                 <h1>Shala's Trucking LLC</h1>
             </div>
@@ -52,7 +52,7 @@
                 <div class="developer">
                     <div>
                         <h3>OR</h3>
-                        <p>Contact the Developer! <a href="https://CyberNotesDev.github.io">Elijah Littell</a></p>
+                        <p>Contact the Developer! <a href="https://CyberNotesDev.github.io">Elijah Littell-Sivley</a></p>
                     </div>
                 </div>
             </div>
@@ -78,11 +78,16 @@
         <div class="footer-container">
             
             <div class="copyright">
-                <p>Shala's Trucking LLC | &copy; 2021 | &REG; All rights Reserved;</p>
+                <p>Shala's Trucking LLC | &copy; <span id="year"></span> | &REG; All rights Reserved; &trade;</p>
             </div>
 
         </div>
     </footer>
     <script src="./js/thankyou.js"></script>
+    <script>
+        let year = document.getElementById("year");
+        let date = new Date().getFullYear();
+        year.innerHTML = date;
+    </script>
 </body>
 </html>
