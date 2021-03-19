@@ -117,6 +117,10 @@ form .button {
     margin-top: 10px;
 }
 
+.contact form textarea, input {
+    border-radius: 5px;
+}
+
 .contact form textarea {
     resize: none;
 }
@@ -127,7 +131,6 @@ form .button {
     justify-content: center;
     padding: 15px;
     height: 600px;
-    border: 1px solid  black;
 }
 
 .vision-mission-wrapper {
@@ -141,8 +144,13 @@ form .button {
 }
 
 .mission {
-    margin-top: 100px;
     text-align: center;
+    margin-top: 100px;
+}
+
+.values {
+    text-align: center;
+    margin-top: 100px;
 }
 
 .vision-mission-wrapper img {
